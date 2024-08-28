@@ -1,0 +1,20 @@
+<h2>Edit Profile</h2>
+<form (ngSubmit)="saveProfile()">
+    <div>
+        <label>Username: </label>
+        <input [(ngModel)]="user.username" name="username" disabled>
+    </div>
+    <div>
+        <label>Birthdate: </label>
+        <input [(ngModel)]="user.birthdate" name="birthdate" type="date">
+    </div>
+    <div>
+        <label>Age: </label>
+        <input [(ngModel)]="user.age" name="age" type="number">
+    </div>
+    <div>
+        <label>Email: </label>
+        <input [(ngModel)]="user.email" name="email" type="email">
+    </div>
+    <button type="submit">Save</button>
+</form>
